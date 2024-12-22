@@ -46,11 +46,19 @@ DISTFILES += \
 
 HEADERS += \
     LinkCSharpTusDll/LinkCSharpTusDll.h \
-    LinkCSharpTusDll/Public/TusUploadManager.h
+    LinkCSharpTusDll/Public/TusUploadManager.h \
+    LinkCSharpTusDll/MyBubbleSort.h \
+    LinkCSharpTusDll/tusclient/LibraryException.h \
+    LinkCSharpTusDll/tusclient/PEModule.h \
+    LinkCSharpTusDll/tusclient/pch.h
 
 SOURCES += \
     LinkCSharpTusDll/LinkCSharpTusDll.cpp \
-    LinkCSharpTusDll/Private/TusUploadManager.cpp
+    LinkCSharpTusDll/Private/TusUploadManager.cpp \
+    LinkCSharpTusDll/MyBubbleSort.cpp \
+    LinkCSharpTusDll/tusclient/LibraryException.cpp \
+    LinkCSharpTusDll/tusclient/PEModule.cpp \
+    LinkCSharpTusDll/tusclient/pch.cpp
 
 
 

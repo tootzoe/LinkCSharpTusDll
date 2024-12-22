@@ -13,16 +13,25 @@
  */
 
 
-UCLASS()
+UCLASS(Blueprintable)
 class LINKCSHARPTUSDLL_API UTusUploadManager : public UObject
 {
 	GENERATED_BODY()
 	
-    public:
+ public:
    explicit  UTusUploadManager();
    ~UTusUploadManager();
 
 
+    UFUNCTION(BlueprintCallable, Category = "TOOT")
+    const FString& FetchDomainName(const bool isAll);
+
+
+
+
+
     private:
+
+    FString _domainName;
 	
 };
