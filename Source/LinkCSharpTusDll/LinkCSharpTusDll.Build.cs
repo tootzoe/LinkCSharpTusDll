@@ -7,6 +7,8 @@ public class LinkCSharpTusDll : ModuleRules
 	public LinkCSharpTusDll(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+
+        bEnableExceptions = true;
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
 

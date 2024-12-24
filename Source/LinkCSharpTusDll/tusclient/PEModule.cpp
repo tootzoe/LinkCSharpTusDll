@@ -2,8 +2,11 @@
 // Copyright (c) 2018  Denis Kuzmin < x-3F@outlook.com > GitHub/3F
 // Distributed under the MIT License
 
-#include "pch.h"
+
+
 #include "PEModule.h"
+#include "pch.h"
+
 #include "LibraryException.h"
 
 namespace tootzoe::tusCSharpClient

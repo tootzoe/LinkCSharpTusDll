@@ -2,8 +2,12 @@
 // Copyright (c) 2018  Denis Kuzmin < x-3F@outlook.com > GitHub/3F
 // Distributed under the MIT License
 
-#include "pch.h"
+
+
 #include "LibraryException.h"
+#include "pch.h"
+
+
 
 
 
@@ -14,7 +18,7 @@ namespace tootzoe::tusCSharpClient
         return error;
     }
 
-    const char* LibraryException::what() const
+    const char* LibraryException::what() const throw ()
     {
         DWORD sz = FormatMessageA(
             FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_ALLOCATE_BUFFER,
@@ -27,7 +31,7 @@ namespace tootzoe::tusCSharpClient
         );
 
         if (sz < 1) {
-            return "Failed with system error: " + error;
+            return "Failed with system error : " + error;
         }
         return sysMsg;
     }

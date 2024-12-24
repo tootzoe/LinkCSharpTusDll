@@ -4,6 +4,8 @@
 
 #pragma once
 
+#include <windows.h>
+
 namespace tootzoe::tusCSharpClient
 {
     class PEModule

@@ -68,4 +68,4 @@ DEFINES += "COLLECTIONMANAGER_API="
 ##
 DEFINES += "LogTemp" "Warning"
 DEFINES += "BlueprintType" "Blueprintable" "BlueprintPure" "BlueprintImplementableEvent"
-DEFINES += "BlueprintAssignable" "EditAnywhere"
+DEFINES += "BlueprintAssignable" "BlueprintInternalUseOnly" "EditAnywhere"

@@ -4,6 +4,11 @@
 
 #pragma once
 
+
+
+#include <windows.h>
+
+
 namespace tootzoe::tusCSharpClient
 {
     class LibraryException: public std::exception
@@ -17,7 +22,7 @@ namespace tootzoe::tusCSharpClient
 
         DWORD getError() const;
 
-        virtual const char* what() const;
+        virtual const char* what() const  throw ();
 
     private:
 
